@@ -96,13 +96,13 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: rgb(39, 38, 38);
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
@@ -111,23 +111,35 @@ body {
 
 header,
 footer {
-  background-color: #222;
-  height: 80px;
+  background-color: rgb(39, 38, 38);
+  height: 140px;
   width: 100%;
 }
 
 main {
-  background-color: #ccc;
+  background-color:rgb(39, 38, 38);
   height: 250px;
   width: 100%;
 }
 
-header,
 footer,
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+main {
+    font-size: 1.5em;
 }
 
 .flex-container {
@@ -136,19 +148,38 @@ main {
     align-items: center;
     flex-flow: row wrap;
     justify-content:space-between;
+    padding: 1.25em;
 }
 
 .flex-items {
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1.1em;
+  background-color: rgb(39, 38, 38);
   width: 30%;
-  height: 200px;
+  height: 200px; 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  margin: 1.25em 0;
 }
+
+#div-2 {
+    border-left: 0.1em solid grey;
+    border-right: 0.1em solid grey;
+    padding: 0 1.2em;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0.5em;
+}
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
