@@ -12,7 +12,7 @@ body {
 
 .container{
 	max-width: 1200px;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -121,6 +121,13 @@ header nav ul li a{
 	flex-flow: row nowrap;
 }
 
+.main-title,
+.section-one,
+.section-two,
+.section-three {
+	padding: 1em;
+}
+
 .main-title {
 	flex-flow: row nowrap;
 	height: auto;
@@ -192,6 +199,9 @@ footer span {
 }
 
 @media (min-width: 1200px) {
+	.container {
+		flex-flow: row wrap;
+	}
 	.section-two {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
@@ -202,6 +212,10 @@ footer span {
 	.section-three {
 		width: 33%;
 		display: flex;
+		align-items: stretch;
+		justify-content: flex-start;
+		flex-flow: column nowrap;
+		padding: 0;
 	}
 
 	.section-one h4, 
@@ -215,12 +229,38 @@ footer span {
 	.section-three p {
 		padding: 10px 30px;
 	}
-	
+
 	.menu li {
 		padding: 10px 0px;
 	}
 
+	header {
+		width: 100%;
+		flex-flow: row nowrap;
+	}
+
 	header h1 {
 		padding: 38px 0;
+		width: 50%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		border: none;	
+	}
+
+	header nav {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+
 	}
 }
