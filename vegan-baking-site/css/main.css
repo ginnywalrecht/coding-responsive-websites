@@ -157,6 +157,38 @@ nav ul li {
 
 /* Styles for featured subs section */
 
+.icon-content img {
+  width: 10em;
+  height: auto;
+  text-align: center;
+  margin: auto;
+}
+
+.icon-content article {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-flow: column wrap;
+  padding: 2.5em 0;
+}
+
+.fontawesome-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.features-item-description {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-flow: column wrap;
+  width: 55%;
+  margin: auto;
+  text-align: center;
+}
+
 /* Styles for footer */
 
 footer .content-wrapper {
@@ -181,40 +213,6 @@ footer .content-wrapper {
   align-items: center;
   flex-flow: row nowrap;
   list-style: none;
-}
-
-/* Styles for Desktop */
-
-@media screen and (min-width: 1200px) {
-  header, footer, .content-wrapper .icon-content, aside {
-    flex-flow: row wrap;
-  }
-  header .content-wrapper {
-    justify-content: flex-start;
-    flex-flow: row nowrap;
-    width: 100%;
-  }
-
-  header .header-divider nav ul {
-    justify-content: flex-end;
-  }
-  .content-wrapper a {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  footer .content-wrapper {
-    flex-flow: column nowrap;
-    width: 70%;
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row nowrap;
-  }
 }
 
 
@@ -309,6 +307,102 @@ footer .content-wrapper {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+}
+
+/* Styles for tablet */
+
+@media screen and (min-width: 768px) {
+  header, footer, .content-wrapper .icon-content, aside {
+    flex-flow: row wrap;
+  }
+  header .content-wrapper {
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  header .header-divider nav ul {
+    justify-content: flex-end;
+  }
+  .content-wrapper a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  footer .content-wrapper {
+    flex-flow: column nowrap;
+    width: 63%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+
+  .icon-content {
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+
+  .icon-content article {
+    width: 50%;
+  }
+
+  .icon-content img {
+    width: 10em;
+    height: auto;
+  }
+}
+
+/* Styles for Desktop */
+
+@media screen and (min-width: 1200px) {
+  header, footer, .content-wrapper .icon-content, aside {
+    flex-flow: row wrap;
+  }
+  header .content-wrapper {
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  header .header-divider nav ul {
+    justify-content: flex-end;
+  }
+  .content-wrapper a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  footer .content-wrapper {
+    flex-flow: column nowrap;
+    width: 70%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+
+  .icon-content {
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+
+  .icon-content article {
+    width: 33%;
+  }
+
+  .icon-content img {
+    width: 10em;
+    height: auto;
+  }
 }
 
 @media print,
