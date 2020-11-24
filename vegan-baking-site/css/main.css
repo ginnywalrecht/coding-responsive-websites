@@ -87,6 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Base Structural Styles*/
 
 header, 
 footer, 
@@ -101,29 +102,118 @@ aside,
   flex-flow: column nowrap;
 }
 
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-size: 16px;
+}
+
+/* Header Styles */
+
+header {
+  background: white; 
+  padding: 15px 0;
+  width: 100%;
+}
+
+header .content-wrapper img {
+  width: 60%;
+}
+
+header .content-wrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   list-style: none;
+  width: 60%;
+}
+
+nav ul li {
+  padding: 1em 1.5em;
+  text-align: center;
+}
+
+/* Styles for Hero Area */
+
+.hero-area {
+  background: url("../img/hero.jpg") no-repeat center;
+  height: 500px;
+}
+
+.hero-area h1 {
+  font-size: 5em;
+  color: white;
+  padding: 0.5em;
+}
+
+/* Styles for newsletter sign up */
+
+/* Styles for featured subs section */
+
+/* Styles for footer */
+
+footer .content-wrapper {
+  width: 100%;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 55%;
 }
 
 .social-icons ul  {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   list-style: none;
 }
 
+/* Styles for Desktop */
 
 @media screen and (min-width: 1200px) {
   header, footer, .content-wrapper .icon-content, aside {
     flex-flow: row wrap;
   }
-  nav ul {
+  header .content-wrapper {
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  header .header-divider nav ul {
     justify-content: flex-end;
+  }
+  .content-wrapper a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  footer .content-wrapper {
+    flex-flow: column nowrap;
+    width: 70%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
   }
 }
 
