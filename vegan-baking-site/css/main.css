@@ -106,6 +106,7 @@ body {
   max-width: 1200px;
   margin: auto;
   font-size: 16px;
+  font-family: 'Questrial', sans-serif;
 }
 
 /* Header Styles */
@@ -148,12 +149,18 @@ nav ul li {
 }
 
 .hero-area h1 {
-  font-size: 5em;
+  font-size: 4em;
   color: white;
   padding: 0.5em;
+  max-height: 500px;
 }
 
 /* Styles for newsletter sign up */
+
+aside {
+  background: #d8b79e;
+  display
+}
 
 /* Styles for featured subs section */
 
