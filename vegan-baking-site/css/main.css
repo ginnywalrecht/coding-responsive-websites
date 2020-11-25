@@ -87,7 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Base Structural Styles*/
+/* Base Styles*/
 
 header, 
 footer, 
@@ -107,6 +107,10 @@ body {
   margin: auto;
   font-size: 16px;
   font-family: 'Questrial', sans-serif;
+}
+
+main h2 {
+  color: #774a39;
 }
 
 /* Header Styles */
@@ -144,31 +148,74 @@ nav ul li {
 /* Styles for Hero Area */
 
 .hero-area {
-  background: url("../img/hero.jpg") no-repeat center;
+  background: url("../img/hero.jpg") center no-repeat;
+  background-size: cover;
   height: 500px;
+  width: 100%;
 }
 
 .hero-area h1 {
   font-size: 4em;
   color: white;
   padding: 0.5em;
-  max-height: 500px;
 }
 
 /* Styles for newsletter sign up */
 
 aside {
   background: #d8b79e;
-  display
+  width: 100%;
+}
+
+aside .content-wrapper {
+  padding: 1em;
+}
+
+aside .content-wrapper h3 {
+  font-size: 1.5em;
+}
+
+.newsletter-form h3 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.sign-up-box {
+  width: 89%;
+  margin: auto;
+  padding: 1em 0;
+  color: black;
+}
+
+.fancy-button {
+  background: #774a39;
+  border: none;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5em 1em;
+  width: 89%;
+  margin: 1em auto;
 }
 
 /* Styles for featured subs section */
+
+.featured-subs {
+  padding: 1em;
+}
 
 .icon-content img {
   width: 10em;
   height: auto;
   text-align: center;
-  margin: auto;
+  margin: 1em auto;
 }
 
 .icon-content article {
@@ -176,7 +223,7 @@ aside {
   align-items: stretch;
   justify-content: center;
   flex-flow: column wrap;
-  padding: 2.5em 0;
+  padding: 2em 0;
 }
 
 .fontawesome-icon {
@@ -196,6 +243,14 @@ aside {
   text-align: center;
 }
 
+/* Styles for result section */
+
+.results {
+  padding: 1em;
+  background: #f2f2f2;
+}
+
+
 /* Styles for footer */
 
 footer .content-wrapper {
@@ -203,6 +258,7 @@ footer .content-wrapper {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  background: #d8b79e;
   margin: 0;
 }
 
@@ -214,12 +270,27 @@ footer .content-wrapper {
   width: 55%;
 }
 
+.social, .contact {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
 .social-icons ul  {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
   list-style: none;
+  padding: 0;
+  margin: 1em;
+}
+.social-icons img {
+  width: 2.5em;
+  height: auto;
+  margin: 0 1em;
 }
 
 
@@ -318,10 +389,23 @@ footer .content-wrapper {
 
 /* Styles for tablet */
 
-@media screen and (min-width: 768px) {
-  header, footer, .content-wrapper .icon-content, aside {
+@media only screen and (min-width: 768px) {
+  header, 
+  footer, 
+  .content-wrapper 
+  .icon-content, 
+  aside {
     flex-flow: row wrap;
   }
+
+  aside .content-wrapper, 
+  .results, 
+  .featured-subs {
+    padding: 3em;
+  }
+
+  /* Header */
+
   header .content-wrapper {
     justify-content: flex-start;
     flex-flow: row nowrap;
@@ -331,15 +415,17 @@ footer .content-wrapper {
   header .header-divider nav ul {
     justify-content: flex-end;
   }
-  .content-wrapper a {
+
+  header .content-wrapper a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
 
+  /* Footer */
+
   footer .content-wrapper {
     flex-flow: column nowrap;
-    width: 63%;
   }
 
   .footer-content {
@@ -347,7 +433,33 @@ footer .content-wrapper {
     justify-content: space-between;
     align-items: center;
     flex-flow: row nowrap;
+    width: 63%;
   }
+
+  /* Newsletter */
+
+  aside {
+    width: 100%;
+  }
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    width: 84%;
+  }
+
+  .newsletter-form {
+    width: 38%;
+  }
+
+  .newsletter-content {
+    width: 33%;
+  }
+
+
+  /* Featured Subs section */
 
   .icon-content {
     flex-flow: row wrap;
@@ -362,14 +474,20 @@ footer .content-wrapper {
     width: 10em;
     height: auto;
   }
+
+  /* Results section */
 }
+
 
 /* Styles for Desktop */
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   header, footer, .content-wrapper .icon-content, aside {
     flex-flow: row wrap;
   }
+
+  /* Header */
+
   header .content-wrapper {
     justify-content: flex-start;
     flex-flow: row nowrap;
@@ -379,15 +497,17 @@ footer .content-wrapper {
   header .header-divider nav ul {
     justify-content: flex-end;
   }
-  .content-wrapper a {
+
+  header .content-wrapper a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
 
+  /* Footer */
+
   footer .content-wrapper {
     flex-flow: column nowrap;
-    width: 70%;
   }
 
   .footer-content {
@@ -395,7 +515,32 @@ footer .content-wrapper {
     justify-content: space-between;
     align-items: center;
     flex-flow: row nowrap;
+    width: 70%;
   }
+
+    /* Newsletter */
+
+    aside {
+      width: 100%;
+    }
+  
+    aside .content-wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-flow: row nowrap;
+      width: 84%;
+    }
+  
+    .newsletter-form {
+      width: 38%;
+    }
+  
+    .newsletter-content {
+      width: 33%;
+    }
+
+  /*Featured subs section*/
 
   .icon-content {
     flex-flow: row wrap;
