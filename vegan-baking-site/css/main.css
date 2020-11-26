@@ -122,16 +122,23 @@ header {
 }
 
 header .content-wrapper img {
-  width: 100%;
+  width: 80%;
   padding-bottom: 0.25em;
   border-bottom: black solid 1px;
 }
 
-header .logo {
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5em 1em;
+}
+
+figure {
+  width: 100%;
+}
+
+nav {
+  width: 60%;
 }
 
 nav ul {
@@ -141,7 +148,6 @@ nav ul {
   flex-flow: row nowrap;
   list-style: none;
   padding: 0;
-  width: 60%;
 }
 
 nav ul li {
@@ -151,7 +157,7 @@ nav ul li {
   flex-flow: column nowrap;
   font-size: 1.75em;
   margin: 1em;
-  width: 50%;
+  width: 30%;
 }
 
 nav ul li a {
@@ -428,24 +434,48 @@ footer .content-wrapper {
 
   header {
     width: 100%;
+    border: #774a39 1px solid;
   }
 
   header .content-wrapper {
     justify-content: space-between;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     width: 100%;
+    border: #774a39 1px solid;
     padding: 0;
+  }
+
+  figure {
+    width: 25%;
+    border: #774a39 1px solid;
+    margin: 0;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
   }
 
   header .content-wrapper img {
     border-bottom: none;
-    width: 50%;
     height: auto;
+    padding: 0;
+    width: 100%;
   }
 
   nav {
-    width: 50%;
+    width: 100%;
+    border: #774a39 1px solid;
+    display: flex;
+    justify-content: flex-end;
   }
+
+  nav ul {
+    border: #774a39 1px solid;
+  }
+
 
   /* Footer */
 
@@ -527,25 +557,6 @@ footer .content-wrapper {
 
   /* Header */
 
-  header {
-    width: 100%;
-  }
-
-  header .content-wrapper {
-    justify-content: space-between;
-    flex-flow: row nowrap;
-    width: 100%;
-    padding: 0;
-  }
-
-  header .content-wrapper img {
-    border-bottom: none;
-    width: 50%;
-  }
-
-  nav {
-    width: 50%;
-  }
 
   /* Footer */
 
