@@ -117,32 +117,52 @@ main h2 {
 
 header {
   background: white; 
-  padding: 15px 0;
+  padding: 0;
   width: 100%;
 }
 
 header .content-wrapper img {
-  width: 60%;
+  width: 100%;
+  padding-bottom: 0.25em;
+  border-bottom: black solid 1px;
 }
 
-header .content-wrapper a {
+header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.5em 1em;
 }
 
 nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row nowrap;
   list-style: none;
+  padding: 0;
   width: 60%;
 }
 
 nav ul li {
-  padding: 1em 1.5em;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  font-size: 1.75em;
+  margin: 1em;
+  width: 50%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-variant: small-caps;
+  color: black;
+
+}
+
+nav ul li a:hover {
+  color: #774a39;
 }
 
 /* Styles for Hero Area */
@@ -406,20 +426,25 @@ footer .content-wrapper {
 
   /* Header */
 
-  header .content-wrapper {
-    justify-content: flex-start;
-    flex-flow: row nowrap;
+  header {
     width: 100%;
   }
 
-  header .header-divider nav ul {
-    justify-content: flex-end;
+  header .content-wrapper {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding: 0;
   }
 
-  header .content-wrapper a {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  header .content-wrapper img {
+    border-bottom: none;
+    width: 50%;
+    height: auto;
+  }
+
+  nav {
+    width: 50%;
   }
 
   /* Footer */
@@ -434,6 +459,20 @@ footer .content-wrapper {
     align-items: center;
     flex-flow: row nowrap;
     width: 63%;
+  }
+
+  .contact {
+    width: 31.5%;
+  }
+
+  .social {
+    width: 31.5%;
+  }
+
+  .social-icons img {
+    width: 2.25em;
+    height: auto;
+    margin: 0 0.75em;
   }
 
   /* Newsletter */
@@ -488,20 +527,24 @@ footer .content-wrapper {
 
   /* Header */
 
-  header .content-wrapper {
-    justify-content: flex-start;
-    flex-flow: row nowrap;
+  header {
     width: 100%;
   }
 
-  header .header-divider nav ul {
-    justify-content: flex-end;
+  header .content-wrapper {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding: 0;
   }
 
-  header .content-wrapper a {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  header .content-wrapper img {
+    border-bottom: none;
+    width: 50%;
+  }
+
+  nav {
+    width: 50%;
   }
 
   /* Footer */
@@ -516,6 +559,20 @@ footer .content-wrapper {
     align-items: center;
     flex-flow: row nowrap;
     width: 70%;
+  }
+
+  .contact {
+    width: 35%;
+  }
+
+  .social {
+    width: 35%;
+  }
+
+  .social-icons img {
+    width: 2.25em;
+    height: auto;
+    margin: 0 0.75em;
   }
 
     /* Newsletter */
