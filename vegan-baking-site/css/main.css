@@ -365,6 +365,10 @@ footer .content-wrapper {
    About page
    ========================================================================== */
 
+.about {
+  padding-bottom: 2em;
+}
+
 .about .content-wrapper {
   width: 95%;
 }
@@ -385,6 +389,31 @@ footer .content-wrapper {
   flex-flow: column nowrap;
   width: 95%;
 }
+
+/* ==========================================================================
+   FAQ page
+   ========================================================================== */
+
+   .faq {
+    padding: 0 1em 2em 1em;
+   }
+
+   .faq h2 {
+    text-align: center;
+   }
+
+   .faq .content-wrapper {
+    width: 95%;
+  }
+  
+  .faq .half-width, 
+  .faq .half-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 95%;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -624,7 +653,6 @@ footer .content-wrapper {
 
   .results article {
     width: 45%;
-    border: solid 1px #774a39;
   }
   
   .results img {
@@ -661,6 +689,26 @@ footer .content-wrapper {
   }
 
   .half-width-wrapper {
+    width: 45%;
+  }
+  
+  /****** FAQ page ******/
+
+  .faq .content-wrapper {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    margin: auto;
+  }
+  
+  .faq .half-width, 
+  .faq .half-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
     width: 45%;
   }
 }
