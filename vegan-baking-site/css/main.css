@@ -119,6 +119,7 @@ header {
   background: white; 
   padding: 0;
   width: 100%;
+  margin: 0;
 }
 
 header .content-wrapper img {
@@ -173,16 +174,24 @@ nav ul li a:hover {
 
 /* Styles for Hero Area */
 
+main {
+  padding: 0;
+  margin: 0;
+}
+
 .hero-area {
   background: url("../img/hero.jpg") center no-repeat;
   background-size: cover;
   height: 500px;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top: solid 1px transparent;
 }
 
 .hero-area h1 {
   font-size: 4em;
-  color: white;
+  color: #fff;
   padding: 0.5em;
 }
 
@@ -234,7 +243,18 @@ form {
 /* Styles for featured subs section */
 
 .featured-subs {
-  padding: 1em;
+  background: url("../img/featured-subs-background.jpg") center no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.featured-subs .content-wrapper {
+  background-color: #fff;
+  opacity: 0.9;
+  padding: 0;
+  margin: 0;
 }
 
 .icon-content img {
@@ -426,7 +446,7 @@ footer .content-wrapper {
 
   aside .content-wrapper, 
   .results, 
-  .featured-subs {
+  .featured-subs .content-wrapper {
     padding: 3em;
   }
 
@@ -434,20 +454,17 @@ footer .content-wrapper {
 
   header {
     width: 100%;
-    border: #774a39 1px solid;
   }
 
   header .content-wrapper {
     justify-content: space-between;
     flex-flow: row wrap;
     width: 100%;
-    border: #774a39 1px solid;
-    padding: 0;
+    padding: 1em 0;
   }
 
   figure {
     width: 25%;
-    border: #774a39 1px solid;
     margin: 0;
   }
 
@@ -467,15 +484,9 @@ footer .content-wrapper {
 
   nav {
     width: 100%;
-    border: #774a39 1px solid;
     display: flex;
     justify-content: flex-end;
   }
-
-  nav ul {
-    border: #774a39 1px solid;
-  }
-
 
   /* Footer */
 
@@ -525,6 +536,12 @@ footer .content-wrapper {
 
   .newsletter-content {
     width: 33%;
+  }
+
+  /* Hero section */
+
+  .hero-area {
+    height: 600px;
   }
 
 
@@ -586,27 +603,27 @@ footer .content-wrapper {
     margin: 0 0.75em;
   }
 
-    /* Newsletter */
+  /* Newsletter */
 
-    aside {
-      width: 100%;
+  aside {
+    width: 100%;
+  }
+  
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    width: 84%;
     }
   
-    aside .content-wrapper {
-      display: flex;
-      justify-content: space-around;
-      align-items: stretch;
-      flex-flow: row nowrap;
-      width: 84%;
-    }
+  .newsletter-form {
+    width: 38%;
+  }
   
-    .newsletter-form {
-      width: 38%;
-    }
-  
-    .newsletter-content {
-      width: 33%;
-    }
+  .newsletter-content {
+    width: 33%;
+  }
 
   /*Featured subs section*/
 
@@ -616,7 +633,7 @@ footer .content-wrapper {
   }
 
   .icon-content article {
-    width: 33%;
+    width: 30%;
   }
 
   .icon-content img {
