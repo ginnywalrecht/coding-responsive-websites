@@ -292,10 +292,32 @@ form {
 /* Styles for result section */
 
 .results {
-  padding: 1em;
   background: #f2f2f2;
+  margin: 0;
+  padding:0;
+  border: solid 1px transparent;
 }
 
+.results h2 {
+  width: 90%;
+}
+
+.results-picture {
+  width: 90%;
+}
+
+.results .content-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.results.article {
+  width: 90%;
+}
+
+.results img {
+  width: 100%
+}
 
 /* Styles for footer */
 
@@ -339,7 +361,30 @@ footer .content-wrapper {
   margin: 0 1em;
 }
 
+/* ==========================================================================
+   About page
+   ========================================================================== */
 
+.about .content-wrapper {
+  width: 95%;
+}
+
+.about-image {
+  width: 90%;
+}
+
+.mission-content img {
+  width: 100%
+}
+
+.mission-content, 
+.background-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 95%;
+}
 
 /* ==========================================================================
    Helper classes
@@ -562,6 +607,62 @@ footer .content-wrapper {
   }
 
   /* Results section */
+
+  .results .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+  }
+
+  .results-picture {
+    width: 45%;
+  }
+
+  .results article {
+    width: 45%;
+    border: solid 1px #774a39;
+  }
+  
+  .results img {
+    width: 100%
+  }
+
+  /****** ABOUT PAGE ******/ 
+
+  .about {
+    margin: auto;
+  }
+
+  .about .content-wrapper {
+    margin: auto;
+    width: 95%;
+  }
+
+  .about-image {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .mission-content img {
+    width: 50%;
+  }
+
+  .mission-content, 
+  .background-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    width: 95%;
+  }
+
+  .half-width-wrapper {
+    width: 45%;
+  }
 }
 
 
@@ -639,6 +740,12 @@ footer .content-wrapper {
   .icon-content img {
     width: 10em;
     height: auto;
+  }
+
+  /* Results section */
+
+  .results img {
+    width: 90%
   }
 }
 
