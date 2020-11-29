@@ -143,7 +143,7 @@ p {
 }
  
 img {
- 
+  width: 100%;
 }
  
 figure {
@@ -178,7 +178,6 @@ header {
 }
 
 header .content-wrapper img {
-  width: 75%;
   display: inline-block;
   padding-bottom: 1em;
   border-bottom: #d8b79e solid 1.25px;
@@ -191,7 +190,7 @@ header .content-wrapper img {
 }
 
 figure {
-  width: 100%;
+  width: 65%;
 }
 
 nav {
@@ -326,10 +325,7 @@ form {
 }
 
 .icon-content img {
-  width: 10em;
-  height: auto;
-  text-align: center;
-  margin: 1em auto;
+
 }
 
 .icon-content article {
@@ -341,10 +337,13 @@ form {
 }
 
 .fontawesome-icon {
+  width: 35%;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-flow: column wrap;
+  text-align: center;
+  margin: 1em auto;
 }
 
 .features-item-description, 
@@ -361,7 +360,7 @@ form {
 .featured-subs h4 {
   font-family: 'Hillonest Signature';
   font-size: 1.5em;
-  margin-top: -10px;
+  margin-top: 0;
 }
 
 /* Styles for result section */
@@ -439,11 +438,12 @@ footer h3 {
   padding: 0;
   margin: 1em;
 }
-.social-icons img {
-  width: 2.5em;
-  height: auto;
-  margin: 0 1em;
+
+.social-icons li {
+  width: 2em;
+  margin: 0 0.75em;
 }
+
 
 /* ==========================================================================
    About page
@@ -689,7 +689,6 @@ footer h3 {
     width: 33%;
   }
 
-
   /* Featured Subs section */
 
   .icon-content {
@@ -701,9 +700,8 @@ footer h3 {
     width: 50%;
   }
 
-  .icon-content img {
-    width: 10em;
-    height: auto;
+  .fontawesome-icon {
+    width: 50%;
   }
 
   /* Results section */
@@ -724,10 +722,6 @@ footer h3 {
 
   .results article {
     width: 45%;
-  }
-  
-  .results img {
-    width: 100%
   }
 
   .results h2 {
@@ -888,15 +882,9 @@ footer h3 {
     width: 30%;
   }
 
-  .icon-content img {
-    width: 10em;
+  .icon-content figure {
+    width: 45%;
     height: auto;
-  }
-
-  /* Results section */
-
-  .results img {
-    width: 90%
   }
 }
 
