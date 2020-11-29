@@ -87,7 +87,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Base Styles*/
+/* General Styles */
+
+@font-face {
+  font-family: 'Hillonest Signature';
+  src: url(..//fonts/hillonest-signature-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Dellmonte';
+  src: url(..//fonts/dellmonte-webfont.woff) format('woff');
+}
+
 
 header, 
 footer, 
@@ -101,11 +112,50 @@ aside,
   align-items: center;
   flex-flow: column nowrap;
 }
-
+ 
+html {
+	font-size: 16px;
+}
+ 
 body {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   font-size: 16px;
+  font-family: 'Questrial', sans-serif;
+}
+ 
+a {
+  color: black;
+  text-decoration: none;
+}
+ 
+h2 {
+  font-family: 'Dellmonte';
+}
+ 
+h3, 
+h4 {
+  font-family: 'Dellmonte';
+}
+ 
+p {
+  font-size: 1rem;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+  font-family: 'Dellmonte';
+  font-style: normal;
+}
+ 
+.content-wrapper {
   font-family: 'Questrial', sans-serif;
 }
 
@@ -113,19 +163,25 @@ main h2 {
   color: #774a39;
 }
 
+main {
+  padding: 0;
+  margin: 0;
+}
+
 /* Header Styles */
 
 header {
-  background: white; 
+
   padding: 0;
   width: 100%;
   margin: 0;
 }
 
 header .content-wrapper img {
-  width: 80%;
-  padding-bottom: 0.25em;
-  border-bottom: black solid 1px;
+  width: 75%;
+  display: inline-block;
+  padding-bottom: 1em;
+  border-bottom: #d8b79e solid 1.25px;
 }
 
 .logo {
@@ -139,7 +195,8 @@ figure {
 }
 
 nav {
-  width: 60%;
+  width: 100%;
+  margin: auto;
 }
 
 nav ul {
@@ -149,23 +206,27 @@ nav ul {
   flex-flow: row nowrap;
   list-style: none;
   padding: 0;
+  width: 100%;
 }
 
 nav ul li {
   display: flex;
+  font-family: 'Dellmonte';
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  text-align: center;
   font-size: 1.75em;
-  margin: 1em;
-  width: 30%;
+  padding: 0.5em 1em;
+  width: 50%;
 }
 
 nav ul li a {
   text-decoration: none;
   font-variant: small-caps;
+  text-align: center;
   color: black;
-
+  width: 100%
 }
 
 nav ul li a:hover {
@@ -173,11 +234,6 @@ nav ul li a:hover {
 }
 
 /* Styles for Hero Area */
-
-main {
-  padding: 0;
-  margin: 0;
-}
 
 .hero-area {
   background: url("../img/hero.jpg") center no-repeat;
@@ -190,9 +246,16 @@ main {
 }
 
 .hero-area h1 {
-  font-size: 4em;
-  color: #fff;
+  font-size: 3em;
+  line-height: 4rem;
+  color: #774a39;
   padding: 0.5em;
+  font-family: 'Dellmonte';
+  text-align: center;
+}
+
+.hero-area span {
+  background: rgba(255, 255, 255, 0.75);
 }
 
 /* Styles for newsletter sign up */
@@ -250,6 +313,11 @@ form {
   width: 100%;
 }
 
+.featured-subs h2,
+.featured-subs p {
+  padding: 0 15px;
+}
+
 .featured-subs .content-wrapper {
   background-color: #fff;
   opacity: 0.9;
@@ -279,7 +347,8 @@ form {
   flex-flow: column wrap;
 }
 
-.features-item-description {
+.features-item-description, 
+.featured-subs h4 {
   display: flex;
   align-items: center;
   justify-content: stretch;
@@ -287,6 +356,12 @@ form {
   width: 55%;
   margin: auto;
   text-align: center;
+}
+
+.featured-subs h4 {
+  font-family: 'Hillonest Signature';
+  font-size: 1.5em;
+  margin-top: -10px;
 }
 
 /* Styles for result section */
@@ -300,6 +375,9 @@ form {
 
 .results h2 {
   width: 90%;
+  padding: 0 15px;
+  font-family: 'Hillonest Signature';
+  font-size: 2.5em;
 }
 
 .results-picture {
@@ -330,6 +408,11 @@ footer .content-wrapper {
   margin: 0;
 }
 
+footer h3 {
+  font-family: 'Hillonest Signature';
+  font-size: 1.75em;
+}
+
 .footer-content {
   display: flex;
   justify-content: center;
@@ -344,6 +427,7 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  text-align: center;
 }
 
 .social-icons ul  {
@@ -367,6 +451,11 @@ footer .content-wrapper {
 
 .about {
   padding-bottom: 2em;
+}
+
+.about h2 {
+  font-family: 'Hillonest Signature';
+  font-size: 2.5em;
 }
 
 .about .content-wrapper {
@@ -400,6 +489,8 @@ footer .content-wrapper {
 
    .faq h2 {
     text-align: center;
+    font-family: 'Hillonest Signature';
+    font-size: 2.5em;
    }
 
    .faq .content-wrapper {
@@ -534,7 +625,7 @@ footer .content-wrapper {
     justify-content: space-between;
     flex-flow: row wrap;
     width: 100%;
-    padding: 1em 0;
+    padding: 1.5em 0;
   }
 
   figure {
@@ -552,8 +643,8 @@ footer .content-wrapper {
   header .content-wrapper img {
     border-bottom: none;
     height: auto;
-    padding: 0;
-    width: 100%;
+    padding: 0.25em 0 0.5em 2em;
+    width: 60%;
   }
 
   nav {
@@ -562,32 +653,18 @@ footer .content-wrapper {
     justify-content: flex-end;
   }
 
-  /* Footer */
+  /* Hero section */
 
-  footer .content-wrapper {
-    flex-flow: column nowrap;
-  }
-
-  .footer-content {
+  .hero-area {
+    height: 600px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-flow: row nowrap;
-    width: 63%;
   }
 
-  .contact {
-    width: 31.5%;
-  }
-
-  .social {
-    width: 31.5%;
-  }
-
-  .social-icons img {
-    width: 2.25em;
-    height: auto;
-    margin: 0 0.75em;
+  .hero-area h1 {
+    text-align: center;
+    width: 50%;
   }
 
   /* Newsletter */
@@ -610,12 +687,6 @@ footer .content-wrapper {
 
   .newsletter-content {
     width: 33%;
-  }
-
-  /* Hero section */
-
-  .hero-area {
-    height: 600px;
   }
 
 
@@ -643,7 +714,7 @@ footer .content-wrapper {
     align-items: stretch;
     flex-flow: row nowrap;
     padding: 0;
-    margin: 0;
+    margin: auto;
     width: 90%;
   }
 
@@ -657,6 +728,38 @@ footer .content-wrapper {
   
   .results img {
     width: 100%
+  }
+
+  .results h2 {
+    padding-left: 2rem;
+  }
+
+  /* Footer */
+
+  footer .content-wrapper {
+    flex-flow: column nowrap;
+  }
+    
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 63%;
+  }
+    
+  .contact {
+   width: 31.5%;
+  }
+    
+  .social {
+   width: 31.5%;
+  }
+    
+  .social-icons img {
+    width: 2.25em;
+    height: auto;
+    margin: 0 0.75em;
   }
 
   /****** ABOUT PAGE ******/ 
