@@ -248,7 +248,7 @@ nav ul li a:hover {
 }
 
 .hero-area h1 {
-  font-size: 3em;
+  font-size: 2.25em;
   line-height: 4rem;
   color: #774a39;
   padding: 0.5em;
@@ -375,7 +375,8 @@ form {
   width: 90%;
   padding: 0 15px;
   font-family: 'Hillonest Signature';
-  font-size: 2.5em;
+  font-size: 1.75em;
+  text-align: center;
 }
 
 .results-picture {
@@ -726,6 +727,10 @@ footer h3 {
     width: 80%;
     margin:0.5rem;
   }
+
+  .results h2 {
+    font-size: 2.5em;
+  }
   
   .video-wrapper {
     width: 80%;
@@ -895,7 +900,9 @@ footer h3 {
 
   .results h2 {
     padding-left: 2rem;
+    text-align: left;
   }
+
   .video-wrapper {
     margin: 1.5rem;
     width: 47.5%;
