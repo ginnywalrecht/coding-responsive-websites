@@ -180,7 +180,7 @@ header {
 header .content-wrapper img {
   display: inline-block;
   padding-bottom: 1em;
-  border-bottom: #d8b79e solid 1.25px;
+  border-bottom: black solid 1.25px;
 }
 
 .logo {
@@ -235,13 +235,16 @@ nav ul li a:hover {
 /* Styles for Hero Area */
 
 .hero-area {
-  background: url("../img/hero.jpg") center no-repeat;
+  background: url("../img/hero-background.jpg") center no-repeat;
   background-size: cover;
   height: 500px;
   width: 100%;
   margin: 0;
   padding: 0;
   border-top: solid 1px transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-area h1 {
@@ -668,13 +671,9 @@ footer h3 {
 
   .hero-area {
     height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .hero-area h1 {
-    text-align: center;
     width: 75%;
     font-size: 3.5em;
     line-height: 4rem;
