@@ -249,12 +249,12 @@ nav ul li a:hover {
   line-height: 4rem;
   color: #774a39;
   padding: 0.5em;
-  font-family: 'Dellmonte';
+  font-family: 'Hillonest Signature';
   text-align: center;
 }
 
 .hero-area span {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.95);
 }
 
 /* Styles for newsletter sign up */
@@ -322,10 +322,6 @@ form {
   opacity: 0.9;
   padding: 0;
   margin: 0;
-}
-
-.icon-content img {
-
 }
 
 .icon-content article {
@@ -452,8 +448,11 @@ footer h3 {
 }
 
 .social-icons li {
-  width: 2em;
   margin: 0 0.75em;
+}
+
+.social-icons li i {
+  width: 1.5rem;
 }
 
 
@@ -676,7 +675,9 @@ footer h3 {
 
   .hero-area h1 {
     text-align: center;
-    width: 50%;
+    width: 75%;
+    font-size: 3.5em;
+    line-height: 4rem;
   }
 
   /* Newsletter */
@@ -719,30 +720,16 @@ footer h3 {
   /* Results section */
 
   .results .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-flow: row nowrap;
-    padding: 0;
-    margin: auto;
-    width: 95%;
+    width: 80%;
   }
-
-  .results article {
-    width: 47.5%;
+  
+  .results.article {
+    width: 80%;
+    margin:0.5rem;
   }
-
-  .results h2 {
-    padding-left: 2rem;
-  }
+  
   .video-wrapper {
-    margin: 1.5rem;
-    width: 47.5%;
-  }
-
-  .video-wrapper iframe {
-    max-width: 480px;
-    max-height: 267px;
+    width: 80%;
   }
 
   /* Footer */
@@ -765,12 +752,6 @@ footer h3 {
     
   .social {
    width: 31.5%;
-  }
-    
-  .social-icons img {
-    width: 2.25em;
-    height: auto;
-    margin: 0 0.75em;
   }
 
   /****** ABOUT PAGE ******/ 
@@ -852,10 +833,11 @@ footer h3 {
     width: 35%;
   }
 
-  .social-icons img {
-    width: 2.25em;
-    height: auto;
-    margin: 0 0.75em;
+  /* Hero Area */
+
+  .hero-area h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
   }
 
   /* Newsletter */
@@ -895,12 +877,32 @@ footer h3 {
     width: 45%;
     height: auto;
   }
-  /* Results */
 
-  .video-wrapper iframe {
-    max-width: 505px;
-    max-height: 284px;
+  /* Results section */
+
+  .results .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    padding: 0;
+    margin: auto;
+    width: 95%;
   }
+
+  .results article {
+    width: 47.5%;
+  }
+
+  .results h2 {
+    padding-left: 2rem;
+  }
+  .video-wrapper {
+    margin: 1.5rem;
+    width: 47.5%;
+    padding-bottom: 24.225%;
+  }
+
   /*About Page*/
 
   .about-image {
